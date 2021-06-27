@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
         start = findViewById(R.id.start_button);
         laptime = findViewById(R.id.reset_button);
         laptime.setVisibility(View.GONE);
-        //Start the stopwatch running when the Start button is clicked.
+        //Start the stopwatch running when the Start button is clicked or pause the StopWatch
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
                 }
             }
         });
-        //Reset the stopwatch when the Reset button is clicked.
+        //Reset the stopwatch when the Reset button is clicked or take the laptime
         laptime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
