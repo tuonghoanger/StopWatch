@@ -116,7 +116,7 @@ public class MainActivity extends Activity {
             }
         });
     }
-
+//set up viewholder 
     public class TextHolder extends RecyclerView.ViewHolder {
         TextView textView;
 
@@ -129,7 +129,7 @@ public class MainActivity extends Activity {
             textView.setText(pos);
         }
     }
-
+//set up adapter for recyclerview
     public class TextAdapter extends RecyclerView.Adapter<TextHolder> {
         List<String> listAdapter = new ArrayList<>();
 
